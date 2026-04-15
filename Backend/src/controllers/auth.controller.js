@@ -93,7 +93,13 @@ export const loginController = async (req, res) => {
             maxAge: 3600000
         });
 
-        res.status(200).json({ success: true, message: 'Login successful' });
+        res.status(200).json({ success: true, message: 'Login successful' ,
+            user:{
+                ...user._doc,
+                password:undefined
+            }
+        }
+        );
     } catch (error) {
         console.error("Login error:", error.message);
         res.status(500).json({ success: false, message: 'Server error' });
@@ -118,3 +124,19 @@ export const logoutController = (req, res) => {
         message: 'Logout successful'
     });
 };
+
+export const getMeController = async (req, res) => {
+
+    const user = await userModel.findById(req.user.id)
+
+
+
+    res.status(200).json({
+        message: "User details fetched successfully",
+        user: {
+            ...user._doc,
+            password:undefined
+        }
+    })
+
+}
