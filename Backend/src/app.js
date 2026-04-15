@@ -1,6 +1,7 @@
 import express from 'express';
 import cookiesParser from 'cookie-parser';
 import dotenv from 'dotenv';
+import authRouter from './routes/auth.routes.js';
 
 dotenv.config();
 const app = express();
@@ -8,8 +9,6 @@ const app = express();
 app.use(express.json());
 app.use(cookiesParser());
 
-app.use('/api/auth', (req , res) => {
-    res.send('Auth route');
-});
+app.use('/api/auth',authRouter);
 
 export default app;
