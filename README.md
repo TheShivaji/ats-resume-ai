@@ -2,112 +2,76 @@
 
 ### 💡 AI-Powered Resume Analyzer & Job Matcher
 
-**Analyze • Optimize • Get Hired Faster ⚡**
+**Secure • Scalable • Real-World Ready ⚡**
 
 ---
 
-## 🎯 Why This Project?
+## 🧠 Tech Stack
 
-Most resume tools sirf basic suggestions dete hain.
-This system uses **AI + Vision + ATS logic** to:
+<p align="center">
 
-* 📸 Extract job descriptions from screenshots
-* 📄 Analyze resumes deeply
-* 📊 Provide match score & skill gaps
-* 🛠️ Generate ATS-optimized resumes
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge\&logo=express\&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge\&logo=mongodb\&logoColor=white)](https://www.mongodb.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge\&logo=tailwind-css\&logoColor=white)](https://tailwindcss.com/)
 
-👉 Built like a **real product, not just a project**
-
----
-
-## 📸 UI Preview (Next-Level Concept)
-
-> ⚡ Clean • Modern • SaaS-style Interface
-
-### 🖥️ Dashboard Experience
-
-* Split layout:
-
-  * Left → Upload Resume + Job Screenshot
-  * Right → Live AI Analysis
+</p>
 
 ---
 
-### 🎨 UI Components
+## 🎥 Demo Preview
 
-#### 📊 1. Match Score Gauge
-
-* Speedometer-style animated score
-* Color-based feedback:
-
-  * 🔴 0–40 → Poor
-  * 🟡 40–70 → Average
-  * 🟢 70–100 → Strong
+<p align="center">
+  <img src="https://via.placeholder.com/900x400.png?text=ATS+Resume+AI+Demo" alt="Demo Preview"/>
+</p>
 
 ---
 
-#### 📌 2. Missing Skills Highlight
+## 🖥️ UI Preview
 
-* Highlight missing keywords like:
+### 📊 Match Score Dashboard
 
-  * `Docker`, `System Design`, `AWS`
-* Badge-style UI:
-
-  * ❌ Missing
-  * ⚠️ Partial
-  * ✅ Matched
+<p align="center">
+  <img src="https://via.placeholder.com/800x300.png?text=Match+Score+Gauge" alt="Match Score"/>
+</p>
 
 ---
 
-#### 🧾 3. Resume Preview Panel
+### 📌 Missing Skills Detection
 
-* Live preview (ATS formatted)
-* Section-based:
-
-  * Experience
-  * Skills
-  * Projects
+<p align="center">
+  <img src="https://via.placeholder.com/800x300.png?text=Missing+Skills+UI" alt="Skills UI"/>
+</p>
 
 ---
 
-#### 🗺️ 4. 30-Day Roadmap UI
+### 🧾 Resume Preview Panel
 
-* Timeline / Stepper design
-* Example:
-
-  * Day 1–5 → Basics
-  * Day 6–15 → Projects
-  * Day 16–30 → Advanced
+<p align="center">
+  <img src="https://via.placeholder.com/800x300.png?text=ATS+Resume+Preview" alt="Resume Preview"/>
+</p>
 
 ---
 
-#### 🌙 5. Dark Mode + Animations
+### 🗺️ 30-Day Roadmap
 
-* Smooth transitions (Framer Motion)
-* Glassmorphism cards
-* Hover effects + micro-interactions
+<p align="center">
+  <img src="https://via.placeholder.com/800x300.png?text=Learning+Roadmap" alt="Roadmap"/>
+</p>
 
 ---
 
 ## ✨ Features
 
-* 📸 **Vision AI Parsing** – Screenshot → Job Description
-* 📄 **Resume Parser** – Extract structured data
-* 🧠 **AI Matching Engine** – Resume vs Job
-* 📊 **ATS Score Generator**
-* ❌ **Missing Skills Detection**
-* 🗺️ **30-Day Learning Roadmap**
-* 📥 **ATS Resume Generator (PDF Download)**
-* 🔐 **JWT Authentication**
-
----
-
-## 📌 Highlights
-
-✔ Real-world problem solving project
-✔ Combines Vision AI + LLM + Full Stack
-✔ SaaS-style product architecture
-✔ Recruiter-focused output
+* 📸 Screenshot → Job Description (Vision AI)
+* 📄 Resume Parsing (PDF)
+* 🧠 AI Matching Engine
+* 📊 ATS Score Generator
+* ❌ Missing Skills Detection
+* 🗺️ 30-Day Learning Roadmap
+* 📥 Resume Optimization (PDF Download)
+* 🔐 Secure JWT Authentication
 
 ---
 
@@ -116,41 +80,19 @@ This system uses **AI + Vision + ATS logic** to:
 ```bash
 User Input
    ↓
-📸 Screenshot → Vision API → Job Description
-📄 Resume → Parser → Resume Text
+📸 Screenshot → Vision API
+📄 Resume → Parser
    ↓
 🧠 AI Engine (Mistral)
    ↓
 📊 Match Score + Skill Gap
    ↓
-📄 Resume Optimizer → PDF Output
+📄 Resume Optimizer → PDF
 ```
 
 ---
 
-## 🛠️ Tech Stack
-
-### 🖥️ Frontend
-
-* React / Next.js
-* Tailwind CSS
-* Framer Motion
-
-### ⚙️ Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-
-### 🤖 AI
-
-* Mistral AI
-* Vision API
-
----
-
-## ⚙️ Setup
+## 🚀 Setup
 
 ```bash
 git clone https://github.com/TheShivaji/ats-resume-ai.git
@@ -161,39 +103,19 @@ npm run dev
 
 ---
 
-## 🚀 Future Scope
-
-* 📈 Auto resume improvement
-* 💾 User dashboard
-* 🌐 Multi-language support
-* 📊 Advanced analytics
-
----
-
 ## 👨‍💻 Author
 
-### **Shivaji Jagdale**
+**Shivaji Jagdale**
 
-🚀 Full-Stack Developer | 🤖 AI Builder | ⚡ SaaS Creator
-
-* 🧠 Building **real-world AI products**
-* ⚡ Focused on **automation & productivity tools**
-* 🔐 Strong in **backend + system design**
-
----
-
-## 🌐 Connect
-
-* 🐙 GitHub: https://github.com/TheShivaji
-* 💼 LinkedIn: https://www.linkedin.com/in/prathamesh-jagdale-48817330b/
+* 🚀 Full-Stack Developer
+* 🤖 AI Builder
+* ⚡ SaaS Creator
 
 ---
 
 ## ⭐ Support
 
-If you like this project:
-
-⭐ Star it
+⭐ Star this repo
 🍴 Fork it
 📢 Share it
 
