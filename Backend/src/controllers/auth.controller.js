@@ -67,7 +67,8 @@ export const signupController = async (req, res) => {
             accessToken,
             user: {
                 ...user._doc,
-                password: undefined
+                password: undefined,
+                refreshToken:undefined
             }
         });
 
@@ -132,7 +133,8 @@ export const loginController = async (req, res) => {
             accessToken,
             user: {
                 ...user._doc,
-                password: undefined
+                password: undefined,
+                refreshToken:undefined
             }
         });
 
@@ -185,15 +187,21 @@ export const logoutController = async (req, res) => {
  * @access  Private
  */
 export const getMeController = async (req, res) => {
-    const user = await User.findById(req.user);
+    try {
+        const user = await User.findById(req.user.userId);
 
     return res.status(200).json({
         message: "User details fetched successfully",
         user: {
             ...user._doc,
-            password: undefined
+            password: undefined,
+            refreshToken: undefined
         }
     });
+    } catch (error) {
+        console.log("Error in getController" , error.message)
+    }
+    
 };
 
 
