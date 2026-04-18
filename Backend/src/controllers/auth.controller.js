@@ -200,6 +200,7 @@ export const getMeController = async (req, res) => {
     });
     } catch (error) {
         console.log("Error in getController" , error.message)
+        return res.status(500).json({ message: "Failed to fetch user" });
     }
     
 };
@@ -212,6 +213,7 @@ export const getMeController = async (req, res) => {
  */
 export const refreshController = async (req, res) => {
     try {
+        
         const token = req.cookies.refreshToken;
 
         if (!token) {

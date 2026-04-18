@@ -4,7 +4,7 @@ import { useAuthStore } from '../store/auth.store'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Loader2 } from 'lucide-react'
-import '../form.scss'
+import '../Style/form.scss'
 function Login() {
   const [formData, setFormData] = useState({
     email: '',

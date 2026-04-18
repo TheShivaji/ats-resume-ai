@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+
+import { useNavigate } from 'react-router-dom'
+import { useAuthStore } from '../store/auth.store'
+import '../Style/form.scss'
 const Signup = () => {
 
   const [formData, setFormData] = useState({
@@ -8,7 +12,8 @@ const Signup = () => {
     email: '',
     password: ''
   });
-
+  const navigate = useNavigate();
+  const { signup, isLoading, error } = useAuthStore();
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -16,11 +21,17 @@ const Signup = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
+    
+      await signup(formData);
+      
+    
+    
   };
   return (
+
     <main>
       <div className="form-container">
         <div className="form-header">
@@ -40,7 +51,10 @@ const Signup = () => {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" value={formData.password} onChange={handleChange} />
           </div>
-          <button type="submit">Sign Up</button>
+          {error && <p className="error">{error}</p>}
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? <span className="btn-loader" /> : "Sign Up"}
+          </button>
         </form>
         <div className="form-footer">
           <p>Already have an account? <Link to="/login">Login</Link></p>
